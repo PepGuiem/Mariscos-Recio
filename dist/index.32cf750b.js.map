@@ -1,0 +1,1 @@
+{"mappings":"","sources":["src/js/translator.js"],"sourcesContent":["\r\n      function googleTranslateElementInit() {\r\n        new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');\r\n      }"],"names":[],"version":3,"file":"index.32cf750b.js.map"}

@@ -1,0 +1,375 @@
+:root {
+  --azul-oscuro: #001f3f;
+  --azul-fuerte-medio: #02376d;
+  --azul-medio: #8db0ff;
+  --marron-claro: #d2b48c;
+  --marron-oscuro: #8b4513;
+}
+
+body {
+  /*
+  background-image: url(/src/img/FondoPez.png);
+  background-repeat: repeat;
+  background-size: 70px;*/
+  background-color: rgb(240, 239, 236);
+  overflow-x: hidden;
+  width: 100vw;
+  font-family: 'Libre Baskerville', serif;
+}
+
+@keyframes moveSideToSide {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+nav {
+  background-color: var(--azul-fuerte-medio);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  font-size: 1.5rem;
+}
+
+nav .logo {
+  width: 12vw;
+  z-index: 1000;
+  height: 10vh;
+  margin-top: 6vh;
+  margin-left: 43vw;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  animation: moveSideToSide 8s infinite linear;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav .logo img {
+  width: 11em;
+  height: auto;
+  border-radius: 50%;
+}
+
+#google_translate_element * {
+  display: inline;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#google_translate_element img {
+  display: none;
+}
+
+.contenedor {
+  width: 100vw;
+}
+
+.presentacion {
+  height: 60vh;
+  text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  background-image: url(/src/img/gambas.jpg);
+  width: 100%;
+  height: 100%;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.content-carousel {
+  width: 40%;
+  height: 80%;
+  background-color: var(--azul-oscuro);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 9vh;
+  margin-left: 1%;
+  border-radius: 18px;
+}
+
+.menu {
+  height: 40vh;
+}
+
+.infoPlatos {
+  height: 30vh;
+  background-image: url(/src/img/restaurante.jpg);
+}
+
+.info {
+  height: 52vh;
+  background-color: var(--azul-oscuro);
+}
+
+
+@keyframes barco {
+  0% {
+    transform: translateX(-5vw);
+  }
+
+  50% {
+    transform: translateX(50vw);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.intermedio {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--azul-fuerte-medio);
+}
+
+.intermedio img {
+  width: 10%;
+  height: 9vh;
+  animation: barco 15s infinite linear;
+}
+
+#map {
+  width: 40%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.menu>div {
+  width: 33.33vw;
+  height: 100%;
+}
+
+.menu>div>a {
+  font-size: 1rem;
+  width: 100%;
+  margin: 0;
+}
+
+.menu>div>a:hover {
+  height: 100%;
+  background-color: var(--azul-fuerte-medio);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+}
+
+.entrantes {
+  background-image: url(/src/img/entrantes.jpg);
+}
+
+
+.entrantes>a {
+  height: 100%;
+  background-color: var(--azul-oscuro);
+  clip-path: polygon(0% -10%, 110% 0%, 175% 0%, 0% 110%);
+}
+
+.principales {
+  background-image: url(/src/img/platos-principales.jpg);
+  height: 60%;
+}
+
+.principales>a {
+  background-color: var(--azul-oscuro);
+  height: 47%;
+  width: 100%;
+}
+
+.vinos {
+  background-image: url(/src/img/Arium.jpg);
+  height: 60%;
+}
+
+.vinos>a {
+  height: 100%;
+  background-color: var(--azul-oscuro);
+  clip-path: polygon(-80% 0%, 100% 105%, 100% 0%, 100% 0%);
+}
+
+.postres {
+  background-image: url(/src/img/postre.jpg);
+}
+
+.postres>a {
+  height: 100%;
+  background-color: var(--azul-oscuro);
+  clip-path: polygon(-80% 0%, 100% 105%, 100% 0%, 100% 0%);
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #02376d;
+}
+
+footer>div {
+  margin: 0 10vw;
+  flex-direction: column;
+  text-align: center;
+  width: 20vw;
+  font-size: 1.25rem;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.info-text {
+  width: 50%;
+}
+
+.info-text>table {
+  width: 50%;
+  border: 2px solid white;
+}
+
+.info-text>table tr {
+  border: 2px solid white;
+}
+
+.info-text>table td {
+  text-align: center;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.iconos {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .menu>div {
+    width: 100%;
+    height: 35vh;
+  }
+
+  footer {
+    display: flex;
+    height: 20vh;
+  }
+
+  footer>div>i {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+
+  footer>div>svg {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer>div:first-child {
+    width: 20%;
+  }
+
+  footer>div:nth-child(2) {
+    width: 100%;
+  }
+
+  footer>div:nth-child(3) {
+    width: 10%;
+  }
+
+  .telf>p {
+    text-align: left;
+  }
+
+  .text-white>p {
+    text-align: center;
+  }
+
+  .intermedio {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  footer {
+    width: 120%;
+  }
+
+  .contenedor {
+    width: 120%;
+  }
+
+  #elements {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #hamb {
+    display:contents;
+  }
+
+  nav {
+    width: 91%;
+  }
+
+  .logo {
+    margin-right: 20%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 120%;
+  }
+  table {
+    margin-left: 70%;
+    margin-bottom: 10%;
+  }
+
+  #map {
+    width: 90%;
+  }
+
+  .email {
+    margin-left: 25%;
+  }
+
+}
+
+@media screen and (min-width: 426px) {
+  #hamb {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: n;
+  }
+}

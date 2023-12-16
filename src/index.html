@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/b0382dcbfe.js" crossorigin="anonymous"></script>
+  <title>M. Recio</title>
+</head>
+
+<body>
+  <img src="/src/img/bogavante.jpg" alt="" style="display: none;">
+  <img src="/src/img/gambas.jpg" alt="" style="display: none;">
+  <img src="/src/img/Mariscos-fritos.jpg" alt="" style="display: none;">
+  <nav class="bg-gray-800 p-4">
+    <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 w-full">
+      <div class="flex items-center justify-between">
+        <!-- Menú -->
+        <div id="elements" class="sm:flex space-x-4">
+          <a href="#intro" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 font-medium">Bienvenida</a>
+          <a href="#menu" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 font-medium">Menu</a>
+          <a href="#menuPlatos" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 font-medium">Menu platos</a>
+          <a href="#info" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 font-medium">Información</a>
+        </div>
+
+        <!-- Hamburguesa -->
+        <div id="hamb" class="flex">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Logo -->
+        <div class="flex items-center logo">
+          <img class="h-8" src="/src/img/LogoSinTexto.png" alt="Your Company">
+        </div>
+      </div>
+    </div>
+    <!-- Menú hamburguesa -->
+    <div id="mobile-menu" class="hidden sm:hidden">
+      <div>
+        <a href="#intro" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">Bienvenida</a>
+      </div>
+      <div>
+        <a href="#menu" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">Menu</a>
+      </div>
+      <div>
+        <a href="#info" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">Información</a>
+      </div>
+    </div>
+  </nav>
+  <div class="contenedor">
+    <div class="presentacion" id="intro">
+      <div class="carousel-container">
+        <div class="carousel-item bg-cover bg-center h-auto object-fill text-white">
+          <div class="content-carousel flex items-center justify-center">
+            <h1>Bienvenido a la Marisqueria Recio</h1>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="intermedio flex items-center">
+      <img src="/src/img/barco.png" alt="">
+    </div>
+    <div class="menu flex justify-between" id="menu">
+      <div class="entrantes bg-cover bg-center h-auto text-white">
+        <a href="/src/cartaEntrantes.html" class="flex items-center justify-center"><div>Entrantes</div></a>
+      </div>
+      <div class="principales bg-cover bg-center h-auto text-white">
+        <a href="/src/cartaPrincipales.html" class="flex items-center justify-center"><div>Principales</div></a>
+      </div>
+      <div class="postres flex justify-center items-center bg-cover bg-center h-auto text-white">
+        <a href="/src/cartaPostresYBebidas.html" class="flex items-center justify-center"><div>Postres</div></a>
+      </div>
+    </div>
+    <div class="menu flex justify-between" id="menuPlatos">
+      <div class="entrantes bg-cover bg-center h-auto text-white">
+        <a href="/src/platosEntrantes.html" class="flex items-center justify-center"><div>Platos entrantes</div></a>
+      </div>
+      <div class="principales bg-cover bg-center h-auto text-white">
+        <a href="/src/fotosPlatosPrincipales.html" class="flex items-center justify-center"><div>Platos principales</div></a>
+      </div>
+      <div class="vinos bg-cover bg-center h-auto text-white">
+        <a href="/src/fotosVinos.html" class="flex items-center justify-center"><div>Vinos</div></a>
+      </div>
+    </div>
+  </div>
+  <div class="info flex justify-between" id="info">
+    <div id="map" class="flex justify-center items-center"><iframe width="80%" height="60%" frameborder="0"
+        scrolling="no" marginheight="0" marginwidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Restaurante%20Illeta,%20Camp%20de%20Mar,%20Espa%C3%B1a+(Marisquer%C3%ADa%20Recio)&amp;t=p&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+          href="https://www.maps.ie/population/">Population calculator map</a></iframe> 
+          <br>
+          <div class="text-white">
+            <p class="subrayado ">Dirección</p>
+          </div>
+          <div class="text-white">
+            <p class="flex items-center justify-center">Playa de Camp de Mar, s/n, 07160 Camp de Mar, Balearic Islands</p>
+          </div> 
+      </div>
+      <div class="info-text flex justify-center items-center text-white w-full">
+        <table cellspaciong="0">
+          <thead>
+            <tr>
+              <th colspan="3">Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>12:00-16:00</td>
+              <td>19:00-23:00</td>
+            </tr>
+            <tr>
+              <td>Martes</td>
+              <td>12:00-16:00</td>
+              <td>19:00-23:00</td>
+            </tr>
+            <tr>
+              <td>Jueves</td>
+              <td>12:00-16:00</td>
+              <td>19:00-23:00</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>12:00-16:00</td>
+              <td>19:00-01:00</td>
+            </tr>
+            <tr>
+              <td>Sábado</td>
+              <td>12:00-16:00</td>
+              <td>19:00-01:00</td>
+            </tr>
+            <tr>
+              <td>Domingo</td>
+              <td colspan="2">12:00-16:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+
+  <footer class="text-white">
+    <div class="redesSociales flex justify-center">
+      <div>
+        <p class="subrayado">Redes sociales</p>
+      </div>
+      <br>
+      <div class="iconos flex justify-between">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+    <div class="telf flex justify-center">
+      <p class="subrayado flex justify-center">Teléfono</p> 
+      <p class="flex justify-center">+34 707 35 24</p>
+    </div>
+    <div class="email">
+      <p class="subrayado flex justify-center">Correo electrónico</p>
+      <p class="flex justify-center">marisqueria@recio.lqsa</p>
+    </div>
+  </footer>
+
+  <script src="js/translator.js"></script>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="https://kit.fontawesome.com/98543c3613.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var menuToggle = document.getElementById('menu-toggle');
+      var mobileMenu = document.getElementById('mobile-menu');
+
+      menuToggle.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+
+      });
+    });
+  </script>
+</body>
+
+</html>
